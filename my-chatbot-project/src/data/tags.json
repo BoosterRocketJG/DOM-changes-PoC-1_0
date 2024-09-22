@@ -1,0 +1,114 @@
+[
+  {
+    "name": "24h",
+    "icon": "assets/icons/24h.svg"
+  },
+  {
+    "name": "Kid-friendly",
+    "icon": "assets/icons/balloons.svg"
+  },
+  {
+    "name": "Bar",
+    "icon": "assets/icons/bar.svg"
+  },
+  {
+    "name": "Beach",
+    "icon": "assets/icons/beach.svg"
+  },
+  {
+    "name": "Beauty Spot",
+    "icon": "assets/icons/beauty-spot.svg"
+  },
+  {
+    "name": "Bowling",
+    "icon": "assets/icons/bowling.svg"
+  },
+  {
+    "name": "Breakfast",
+    "icon": "assets/icons/breakfast.svg"
+  },
+  {
+    "name": "Casual Dining",
+    "icon": "assets/icons/burger.svg"
+  },
+  {
+    "name": "Bakery",
+    "icon": "assets/icons/cake.svg"
+  },
+  {
+    "name": "Clothes Shopping",
+    "icon": "assets/icons/clothes-shopping.svg"
+  },
+  {
+    "name": "Coffee",
+    "icon": "assets/icons/coffee.svg"
+  },
+  {
+    "name": "Cycling",
+    "icon": "assets/icons/cycling.svg"
+  },
+  {
+    "name": "Dog Friendly",
+    "icon": "assets/icons/dog-friendly.svg"
+  },
+  {
+    "name": "Educational",
+    "icon": "assets/icons/educational.svg"
+  },
+  {
+    "name": "Euros",
+    "icon": "assets/icons/euros.svg"
+  },
+  {
+    "name": "Football",
+    "icon": "assets/icons/football.svg"
+  },
+  {
+    "name": "Golf",
+    "icon": "assets/icons/golf.svg"
+  },
+  {
+    "name": "Ice Cream",
+    "icon": "assets/icons/ice-cream.svg"
+  },
+  {
+    "name": "Parking",
+    "icon": "assets/icons/parking.svg"
+  },
+  {
+    "name": "Pushchair Friendly",
+    "icon": "assets/icons/pushchair-friendly.svg"
+  },
+  {
+    "name": "Rainy",
+    "icon": "assets/icons/rainy.svg"
+  },
+  {
+    "name": "Restaurant",
+    "icon": "assets/icons/restaurant.svg"
+  },
+  {
+    "name": "Romantic",
+    "icon": "assets/icons/romantic.svg"
+  },
+  {
+    "name": "Shopping",
+    "icon": "assets/icons/shopping.svg"
+  },
+  {
+    "name": "Sunny",
+    "icon": "assets/icons/sunny.svg"
+  },
+  {
+    "name": "Swimming",
+    "icon": "assets/icons/swimming.svg"
+  },
+  {
+    "name": "Thumbs Down",
+    "icon": "assets/icons/thumbs-down-blank.svg"
+  },
+  {
+    "name": "Thumbs Up",
+    "icon": "assets/icons/thumbs-up-blank.svg"
+  }
+]

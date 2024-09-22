@@ -1,0 +1,127 @@
+[
+    {
+        "ID": 3455345,
+        "attractionName": "Statue of A Cool Dog",
+        "shortDescription": "A statue of a very good boy",
+        "longDescription": "A memorial statue of Akiko the Japanese dog",
+        "price": 0,
+        "tags": [
+            "24h",
+            "Parking",
+            "Educational"
+        ],
+        "address1": "24 Bolivia Road",
+        "address2": "Uraguaytown",
+        "areaName": "Little Panama",
+        "coordinates": "46.781239,23.6056356",
+        "carouselImages": [
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp"
+        ]
+    },
+    {
+        "ID": 3455346,
+        "attractionName": "Downtown",
+        "shortDescription": "Shopping and bars",
+        "longDescription": "The bustling heart of the city's nightlife and high-end shops",
+        "price": 2,
+        "tags": [
+            "Bar",
+            "Casual Dining",
+            "Shopping"
+        ],
+        "address1": "25 Bolivia Road",
+        "address2": "Uraguaytown",
+        "areaName": "Little Panama",
+        "coordinates": "46.781239,23.6056357",
+        "carouselImages": [
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp"
+        ]
+    },
+    {
+        "ID": 3455347,
+        "attractionName": "Bakeri",
+        "shortDescription": "A fancy bakery",
+        "longDescription": "This traditional bakery makes all the glutinous treats you could want",
+        "price": 1,
+        "tags": [
+            "Breakfast",
+            "Bakery",
+            "Coffee"
+        ],
+        "address1": "26 Bolivia Road",
+        "address2": "Uraguaytown",
+        "areaName": "Little Panama",
+        "coordinates": "46.781239,23.6056358",
+        "carouselImages": [
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp"
+        ]
+    },
+    {
+        "ID": 3455348,
+        "attractionName": "Memorial Park",
+        "shortDescription": "A very nice park",
+        "longDescription": "It's just a really nice park",
+        "price": 0,
+        "tags": [
+            "Ice Cream",
+            "Pushchair-Friendly",
+            "Dog Friendly"
+        ],
+        "address1": "27 Bolivia Road",
+        "address2": "Uraguaytown",
+        "areaName": "Little Panama",
+        "coordinates": "46.781239,23.6056359",
+        "carouselImages": [
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp"
+        ]
+    },
+    {
+        "ID": 3455349,
+        "attractionName": "The King's Game Golf Club",
+        "shortDescription": "The home of Jolfe",
+        "longDescription": "Fancy-pants golf club with a decent restaurant. Bring money.",
+        "price": 3,
+        "tags": [
+            "Golf",
+            "Casual Dining"
+        ],
+        "address1": "28 Bolivia Road",
+        "address2": "Uraguaytown",
+        "areaName": "Little Panama",
+        "coordinates": "46.781239,23.6056360",
+        "carouselImages": [
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp"
+        ]
+    },
+    {
+        "ID": 3455350,
+        "attractionName": "Secret Beach",
+        "shortDescription": "A sunset getaway",
+        "longDescription": "Escape the city and relax at the beach",
+        "price": 2,
+        "tags": [
+            "Romantic",
+            "Swimming",
+            "Parking"
+        ],
+        "address1": "29 Bolivia Road",
+        "address2": "Uraguaytown",
+        "areaName": "Little Panama",
+        "coordinates": "46.781239,23.6056361",
+        "carouselImages": [
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp",
+            "assets/carousel/placeholder.webp"
+        ]
+    }
+]
