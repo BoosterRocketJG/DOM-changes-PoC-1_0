@@ -1552,6 +1552,10 @@ textarea.w-select {
   border-style: solid;
   border-width: var(--line-weight);
 }
+.card-main-image {
+  height: 100%;
+  object-fit: cover;
+}
 .text-input-wrapper {
   background-color: #f2f2f2;
   flex: 1;

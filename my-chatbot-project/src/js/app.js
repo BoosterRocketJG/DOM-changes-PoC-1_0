@@ -194,3 +194,9 @@ function loadLikeDislikeState(cardId) {
 document.addEventListener("DOMContentLoaded", () => {
   renderCards();
 });
+
+/* -------------------------------------------------------------------------- */
+/*                                getting funky                                */
+/* -------------------------------------------------------------------------- */
+
+
