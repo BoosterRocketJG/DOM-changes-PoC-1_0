@@ -1,127 +1,233 @@
 [
-    {
-        "ID": 3455345,
-        "attractionName": "Statue of A Cool Dog",
-        "shortDescription": "A statue of a very good boy",
-        "longDescription": "A memorial statue of Akiko the Japanese dog",
-        "price": 0,
-        "tags": [
-            "24h",
-            "Parking",
-            "Educational"
-        ],
-        "address1": "24 Bolivia Road",
-        "address2": "Uraguaytown",
-        "areaName": "Little Panama",
-        "coordinates": "46.781239,23.6056356",
-        "carouselImages": [
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp"
-        ]
-    },
-    {
-        "ID": 3455346,
-        "attractionName": "Downtown",
-        "shortDescription": "Shopping and bars",
-        "longDescription": "The bustling heart of the city's nightlife and high-end shops",
-        "price": 2,
-        "tags": [
-            "Bar",
-            "Casual Dining",
-            "Shopping"
-        ],
-        "address1": "25 Bolivia Road",
-        "address2": "Uraguaytown",
-        "areaName": "Little Panama",
-        "coordinates": "46.781239,23.6056357",
-        "carouselImages": [
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp"
-        ]
-    },
-    {
-        "ID": 3455347,
-        "attractionName": "Bakeri",
-        "shortDescription": "A fancy bakery",
-        "longDescription": "This traditional bakery makes all the glutinous treats you could want",
-        "price": 1,
-        "tags": [
-            "Breakfast",
-            "Bakery",
-            "Coffee"
-        ],
-        "address1": "26 Bolivia Road",
-        "address2": "Uraguaytown",
-        "areaName": "Little Panama",
-        "coordinates": "46.781239,23.6056358",
-        "carouselImages": [
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp"
-        ]
-    },
-    {
-        "ID": 3455348,
-        "attractionName": "Memorial Park",
-        "shortDescription": "A very nice park",
-        "longDescription": "It's just a really nice park",
-        "price": 0,
-        "tags": [
-            "Ice Cream",
-            "Pushchair-Friendly",
-            "Dog Friendly"
-        ],
-        "address1": "27 Bolivia Road",
-        "address2": "Uraguaytown",
-        "areaName": "Little Panama",
-        "coordinates": "46.781239,23.6056359",
-        "carouselImages": [
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp"
-        ]
-    },
-    {
-        "ID": 3455349,
-        "attractionName": "The King's Game Golf Club",
-        "shortDescription": "The home of Jolfe",
-        "longDescription": "Fancy-pants golf club with a decent restaurant. Bring money.",
-        "price": 3,
-        "tags": [
-            "Golf",
-            "Casual Dining"
-        ],
-        "address1": "28 Bolivia Road",
-        "address2": "Uraguaytown",
-        "areaName": "Little Panama",
-        "coordinates": "46.781239,23.6056360",
-        "carouselImages": [
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp"
-        ]
-    },
-    {
-        "ID": 3455350,
-        "attractionName": "Secret Beach",
-        "shortDescription": "A sunset getaway",
-        "longDescription": "Escape the city and relax at the beach",
-        "price": 2,
-        "tags": [
-            "Romantic",
-            "Swimming",
-            "Parking"
-        ],
-        "address1": "29 Bolivia Road",
-        "address2": "Uraguaytown",
-        "areaName": "Little Panama",
-        "coordinates": "46.781239,23.6056361",
-        "carouselImages": [
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp",
-            "assets/carousel/placeholder.webp"
-        ]
-    }
+  {
+    "ID": 100000,
+    "attractionName": "Central Park (Parcul Central 'Simion Bărnuțiu')",
+    "shortDescription": "A central green oasis with walking",
+    "longDescription": "Located near the city center, Parcul Central is a beautiful green space perfect for relaxation, featuring a pond, playgrounds, and several paths for walking and jogging.",
+    "price": 0,
+    "tags": ["Outdoor", "Family-Friendly", "Free"],
+    "address1": "Strada Cardinal Iuliu Hossu",
+    "address2": "Central Cluj",
+    "areaName": "Central Cluj",
+    "coordinates": "46.770439,23.580020",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon"],
+    "indoorOutdoor": "Outdoor",
+    "childSuitability_min": 0,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100001,
+    "attractionName": "Cetățuia Hill",
+    "shortDescription": "Best panoramic views of Cluj; famous",
+    "longDescription": "Cetățuia Hill offers breathtaking panoramic views of Cluj from the top. It's a steep climb but worth it for the scenery. You can also visit the Food Truck Park.",
+    "price": 0,
+    "tags": ["Outdoor", "Viewpoint", "History"],
+    "address1": "Cetățuia Hill",
+    "address2": "Northwest Cluj",
+    "areaName": "Northwest Cluj",
+    "coordinates": "46.781239,23.605635",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon", "Evening"],
+    "indoorOutdoor": "Outdoor",
+    "childSuitability_min": 8,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100002,
+    "attractionName": "Piața Unirii and St. Michael’s Church",
+    "shortDescription": "Historic square and home to the",
+    "longDescription": "Piața Unirii is a vibrant historical square in Cluj, where you'll find St. Michael’s Church, one of the largest Gothic churches in Romania, and other key landmarks.",
+    "price": 0,
+    "tags": ["Historic", "Architecture", "Religious"],
+    "address1": "Piața Unirii",
+    "address2": "Central Cluj",
+    "areaName": "Central Cluj",
+    "coordinates": "46.770439,23.589619",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon"],
+    "indoorOutdoor": "Outdoor",
+    "childSuitability_min": 0,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100003,
+    "attractionName": "Banffy Castle",
+    "shortDescription": "A historical castle outside Cluj,",
+    "longDescription": "Banffy Castle, located in Bonțida village outside Cluj, is a restored historical site known for hosting the famous Electric Castle Festival.",
+    "price": 0,
+    "tags": ["Historic", "Festival", "Day Trip"],
+    "address1": "Bonțida Village",
+    "address2": "Near Cluj",
+    "areaName": "Near Cluj",
+    "coordinates": "46.884329,23.738317",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Afternoon", "Evening"],
+    "indoorOutdoor": "Outdoor",
+    "childSuitability_min": 12,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100004,
+    "attractionName": "Hoia Forest",
+    "shortDescription": "Haunted forest famous for paranormal",
+    "longDescription": "Known as one of the most haunted forests in the world, Hoia Forest has been a hotspot for paranormal enthusiasts, offering tours with EMF meters and Geiger counters.",
+    "price": 0,
+    "tags": ["Paranormal", "Outdoor", "Adventure"],
+    "address1": "Hoia Forest",
+    "address2": "Near Cluj",
+    "areaName": "Near Cluj",
+    "coordinates": "46.758748,23.534851",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Night"],
+    "indoorOutdoor": "Outdoor",
+    "childSuitability_min": 12,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100005,
+    "attractionName": "Botanical Garden",
+    "shortDescription": "14-hectare garden featuring indoor",
+    "longDescription": "This Botanical Garden spans over 14 hectares and is home to more than 10,000 plant species from around the world, making it a must-visit for nature lovers.",
+    "price": 1,
+    "tags": ["Nature", "Garden", "Indoor/Outdoor"],
+    "address1": "Strada Republicii",
+    "address2": "Central Cluj",
+    "areaName": "Central Cluj",
+    "coordinates": "46.765424,23.586672",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon"],
+    "indoorOutdoor": "Indoor/Outdoor",
+    "childSuitability_min": 0,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100007,
+    "attractionName": "National Museum of Transylvanian History",
+    "shortDescription": "Museum showcasing Transylvanian history.",
+    "longDescription": "This museum provides an in-depth look at Transylvania's history, from Prehistory through the Roman and Medieval periods. It features a variety of artifacts, including tools, jewelry, and Roman Dacian coins. There's even an Egyptian sarcophagus on display.",
+    "price": 1,
+    "tags": ["History", "Museum"],
+    "address1": "Piața Muzeului",
+    "address2": "Central Cluj",
+    "areaName": "Central Cluj",
+    "coordinates": "46.770000,23.590000",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon"],
+    "indoorOutdoor": "Indoor",
+    "childSuitability_min": 12,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100008,
+    "attractionName": "Pharmacy History Collection (Casa Hintz)",
+    "shortDescription": "Oldest pharmacy now a museum.",
+    "longDescription": "One of the oldest pharmacies in Cluj, dating back to the 1500s, is now a museum showcasing 1,800 pieces, such as old medicine bottles and antique medical equipment.",
+    "price": 1,
+    "tags": ["History", "Museum", "Pharmacy"],
+    "address1": "Strada Regele Ferdinand",
+    "address2": "Central Cluj",
+    "areaName": "Central Cluj",
+    "coordinates": "46.772000,23.593000",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon"],
+    "indoorOutdoor": "Indoor",
+    "childSuitability_min": 12,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100009,
+    "attractionName": "Orthodox Metropolitan Cathedral",
+    "shortDescription": "A striking Orthodox Cathedral.",
+    "longDescription": "An iconic piece of architecture with influences from Hagia Sophia, this Orthodox Cathedral boasts a majestic dome and beautiful mosaics inside.",
+    "price": 0,
+    "tags": ["Architecture", "Religious"],
+    "address1": "Piața Avram Iancu",
+    "address2": "Central Cluj",
+    "areaName": "Central Cluj",
+    "coordinates": "46.769000,23.598000",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon"],
+    "indoorOutdoor": "Indoor",
+    "childSuitability_min": 8,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100010,
+    "attractionName": "Romulus Vuia Ethnographic Park",
+    "shortDescription": "Open-air museum on Transylvanian life.",
+    "longDescription": "An open-air museum showcasing 200 historical buildings from Transylvania. It offers a fascinating look at traditional life in the region, with workshops focusing on metalworking, pottery, and more.",
+    "price": 1,
+    "tags": ["History", "Ethnography", "Museum", "Outdoor"],
+    "address1": "Western outskirts of Cluj",
+    "address2": "Cluj County",
+    "areaName": "West Cluj",
+    "coordinates": "46.758000,23.580000",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon"],
+    "indoorOutdoor": "Outdoor",
+    "childSuitability_min": 8,
+    "childSuitability_max": 100
+  },
+  {
+    "ID": 100011,
+    "attractionName": "Piarists' Church",
+    "shortDescription": "A beautiful Baroque church.",
+    "longDescription": "This Baroque church, built in the 1700s, is one of the most significant religious monuments in Transylvania, known for its Austrian carvings and silver statues of Jesuit saints.",
+    "price": 0,
+    "tags": ["Architecture", "Religious", "History"],
+    "address1": "Strada Universității",
+    "address2": "Central Cluj",
+    "areaName": "Central Cluj",
+    "coordinates": "46.770000,23.595000",
+    "carouselImages": [
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg",
+      "https://cdn.cluj.com/cluj/11001848_10152718255132887_9059974410524114056_n-640x480.jpg"
+    ],
+    "timeOfDay": ["Morning", "Afternoon"],
+    "indoorOutdoor": "Indoor",
+    "childSuitability_min": 10,
+    "childSuitability_max": 100
+  }
 ]

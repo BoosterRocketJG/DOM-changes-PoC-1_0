@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function addMessageToChat(message, sender) {
     const messageElement = document.createElement('div');
     messageElement.classList.add('message', sender); // Add 'message' and either 'user' or 'bot' class
-    messageElement.textContent = message;
+    messageElement.innerHTML = message;
     chatWindow.appendChild(messageElement);
 
     // Scroll to the bottom of the chat window
