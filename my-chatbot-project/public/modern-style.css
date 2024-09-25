@@ -1435,8 +1435,6 @@ textarea.w-select {
   background-size: contain;
   height: 2em;
   width: 2em;
-  background-color: red;
-
 }
 .toggle.like {
   background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-up-blank.svg);
@@ -1445,7 +1443,7 @@ textarea.w-select {
   background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-up-filled.png);
 }
 .toggle.dislike {
-  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/icons/thumbs-down-blank.png);
+  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-down-blank.png);
   position: relative;
   top: 0.7em;
 }
