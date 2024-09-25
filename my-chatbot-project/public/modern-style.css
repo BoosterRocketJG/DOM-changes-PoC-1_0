@@ -1435,20 +1435,22 @@ textarea.w-select {
   background-size: contain;
   height: 2em;
   width: 2em;
+  background-color: red;
+
 }
 .toggle.like {
-  background-image: url(/my-chatbot-project/public/assets/icons/thumbs-up-blank.svg);
+  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-up-blank.svg);
 }
 .toggle.like.active {
-  background-image: url(/my-chatbot-project/public/assets/icons/thumbs-up-filled.svg);
+  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-up-filled.png);
 }
 .toggle.dislike {
-  background-image: url(/my-chatbot-project/public/assets/icons/thumbs-down-blank.svg);
+  background-image: url(/assets/icons/thumbs-down-blank.png);
   position: relative;
   top: 0.7em;
 }
 .toggle.dislike.active {
-  background-image: url(/my-chatbot-project/public/assets/icons/thumbs-down-filled.svg);
+  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-down-filled.png);
 }
 .heading {
   margin-top: 0;
@@ -1565,9 +1567,10 @@ textarea.w-select {
 }
 
 .btn {
-  background-color: #000;
+  background-color:black;
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 1.1rem;
 }
 
 .btn.directions {

@@ -1,0 +1,48 @@
+{
+    "name": "reorder_attractions",
+    "description": "Update the order of attractions suggested to a user to best meet their preferences",
+    "strict": false,
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "attractionList": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "description": "The ID associated with the attraction from attractions.json"
+          },
+          "description": "List of attraction IDs to reorder based on user preferences."
+        },
+        "preferences": {
+          "type": "object",
+          "properties": {
+            "timeOfDay": {
+              "type": "string",
+              "enum": ["morning", "afternoon", "evening"],
+              "description": "Preferred time of day for the attractions"
+            },
+            "weather": {
+              "type": "string",
+              "enum": ["sunny", "rainy", "cloudy"],
+              "description": "Expected weather conditions for the visit"
+            },
+            "accessibility": {
+              "type": "boolean",
+              "description": "Whether accessibility (e.g., for wheelchair users) is a priority"
+            },
+            "indoorOutdoor": {
+              "type": "string",
+              "enum": ["indoor", "outdoor"],
+              "description": "Preference for indoor or outdoor attractions"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": ["attractionList"],
+      "additionalProperties": false,
+    }
+  }
+  
+
+
