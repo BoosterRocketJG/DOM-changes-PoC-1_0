@@ -20,23 +20,23 @@ async function fetchJSON(filePath) {
     sessionStorage.setItem('attractionOrder', JSON.stringify(defaultOrder));
   }
   
-  // Function to render cards based on the order in sessionStorage
-  function renderCards(attractions) {
-    const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
-    cardContainer.innerHTML = ''; // Clear existing cards
-  
-    // Get order from sessionStorage
-    const order = JSON.parse(sessionStorage.getItem('attractionOrder'));
-  
-    // Loop through the order and find corresponding attractions
-    order.forEach(id => {
-      const attraction = attractions.find(attraction => attraction.ID === id);
-      if (attraction) {
-        const card = generateCard(attraction);
-        cardContainer.appendChild(card);
-      }
-    });
-  }
+// Function to render cards based on sessionStorage order
+function renderCards(attractions) {
+  const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
+  cardContainer.innerHTML = ''; // Clear existing cards
+
+  // Retrieve order from sessionStorage
+  const order = JSON.parse(sessionStorage.getItem('attractionOrder'));
+
+  // Loop through the order and find corresponding attractions
+  order.forEach(id => {
+    const attraction = attractions.find(attraction => attraction.ID === id);
+    if (attraction) {
+      const card = generateCard(attraction);
+      cardContainer.appendChild(card);
+    }
+  });
+}
   
   // Function to update card order and re-render based on the API response
   function updateOrderAndRender(newOrder, attractions) {
@@ -87,45 +87,69 @@ async function fetchJSON(filePath) {
   
 // Function to handle API response and update order
 function handleApiResponse(apiResponse, attractions) {
-  let newOrder = apiResponse.newOrder ? apiResponse.newOrder[0] : null;
-  
-  // Ensure newOrder exists and is in the correct format
-  if (newOrder) {
-    console.log("API newOrder before parsing:", newOrder); // Log to check the raw newOrder
-    
+  let newOrder = apiResponse.newOrder || null;
+
+  // Check if the newOrder is a string and parse it into an array
+  if (typeof newOrder === 'string') {
     try {
-      // Try parsing newOrder
-      newOrder = JSON.parse(newOrder);
-      console.log("Parsed newOrder:", newOrder); // Log the parsed order to verify it's correct
-
-      // Ensure it's an array
-      if (Array.isArray(newOrder)) {
-        console.log("Storing newOrder in sessionStorage...");
-        // Store in sessionStorage
-        sessionStorage.setItem('attractionOrder', JSON.stringify(newOrder));
-        console.log("New order stored in sessionStorage:", sessionStorage.getItem('attractionOrder'));
-
-        // Re-render cards using the new order
-        updateOrderAndRender(newOrder, attractions);
-      } else {
-        console.error("Parsed newOrder is not an array.");
-      }
-
+      console.log("Received newOrder as a string:", newOrder); // Log the string version
+      newOrder = JSON.parse(newOrder); // Convert string to array
+      console.log("Parsed newOrder:", newOrder); // Log the parsed array
     } catch (error) {
-      console.error("Failed to parse newOrder from API response:", error);
+      console.error("Error parsing newOrder string:", error);
+      return;
     }
+  }
+
+  // Check if the newOrder is valid and is an array
+  if (newOrder && Array.isArray(newOrder)) {
+    console.log("New order received:", newOrder);
+
+    // Store the new order in sessionStorage
+    sessionStorage.setItem('attractionOrder', JSON.stringify(newOrder));
+    console.log("New order stored in sessionStorage:", sessionStorage.getItem('attractionOrder'));
+
+    // Re-render the cards using the new order
+    updateOrderAndRender(newOrder, attractions);
   } else {
-    console.error("No valid newOrder found in the API response.");
+    console.error("Invalid or missing newOrder in the API response.");
   }
 }
 
 // Function to update card order and re-render
 function updateOrderAndRender(newOrder, attractions) {
+  // Store the new order in sessionStorage (if needed)
   sessionStorage.setItem('attractionOrder', JSON.stringify(newOrder));
-  console.log("Updated order saved to sessionStorage:", sessionStorage.getItem('attractionOrder'));
-  
-  renderCards(attractions); // Re-render cards after order update
+
+  // Clear the existing card container and re-render based on new order
+  renderCards(attractions);
 }
+
+// Function to render cards based on sessionStorage order, showing only 3 cards
+function renderCards(attractions) {
+  const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
+  cardContainer.innerHTML = ''; // Clear existing cards
+
+  // Retrieve order from sessionStorage
+  const storedOrder = sessionStorage.getItem('attractionOrder');
+  console.log("Order retrieved from sessionStorage:", storedOrder); // Log the order from sessionStorage
+
+  if (storedOrder) {
+    const order = JSON.parse(storedOrder);
+
+    // Render the first 3 attractions only
+    order.slice(0, 3).forEach(id => {
+      const attraction = attractions.find(attraction => attraction.ID === id);
+      if (attraction) {
+        const card = generateCard(attraction);
+        cardContainer.appendChild(card);
+      }
+    });
+  } else {
+    console.error("No order found in sessionStorage.");
+  }
+}
+
 
 
   

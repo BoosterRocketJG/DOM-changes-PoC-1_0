@@ -1440,15 +1440,15 @@ textarea.w-select {
   background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-up-blank.svg);
 }
 .toggle.like.active {
-  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-up-filled.png);
+  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-up-filled.svg);
 }
 .toggle.dislike {
-  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-down-blank.png);
+  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-down-blank.svg);
   position: relative;
   top: 0.7em;
 }
 .toggle.dislike.active {
-  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-down-filled.png);
+  background-image: url(https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/public/assets/icons/thumbs-down-filled.svg);
 }
 .heading {
   margin-top: 0;
