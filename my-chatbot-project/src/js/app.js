@@ -22,21 +22,48 @@ async function fetchJSON(filePath) {
   
 // Function to render cards based on sessionStorage order
 function renderCards(attractions) {
-  const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
-  cardContainer.innerHTML = ''; // Clear existing cards
+    const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
+    const cards = document.querySelectorAll('.card');
 
-  // Retrieve order from sessionStorage
-  const order = JSON.parse(sessionStorage.getItem('attractionOrder'));
+    // Add transitions to existing cards before clearing them
+    cards.forEach(card => {
+        card.classList.add('card-noshadow');
+        setTimeout(() => {
+            card.classList.add('card-blank');
+        }, 300); // Add `card-blank` after 300ms
+    });
 
-  // Loop through the order and find corresponding attractions
-  order.forEach(id => {
-    const attraction = attractions.find(attraction => attraction.ID === id);
-    if (attraction) {
-      const card = generateCard(attraction);
-      cardContainer.appendChild(card);
-    }
-  });
+    // Clear cards after transitions are completed (400ms to allow opacity transition)
+    setTimeout(() => {
+        cardContainer.innerHTML = ''; // Clear existing cards
+
+        // Retrieve order from sessionStorage
+        const order = JSON.parse(sessionStorage.getItem('attractionOrder'));
+
+        // Loop through the order and find corresponding attractions
+        order.forEach(id => {
+            const attraction = attractions.find(attraction => attraction.ID === id);
+            if (attraction) {
+                const card = generateCard(attraction);
+                card.classList.add('card-noshadow', 'card-blank'); // Add initial state classes
+                cardContainer.appendChild(card);
+            }
+        });
+
+        // Trigger the reverse transitions for the newly generated cards
+        const newCards = cardContainer.querySelectorAll('.card');
+        newCards.forEach(card => {
+            setTimeout(() => {
+                card.classList.remove('card-blank');
+            }, 600); // Remove `card-blank` after 100ms
+            setTimeout(() => {
+                card.classList.remove('card-noshadow');
+            }, 400); // Remove `card-noshadow` after 400ms (100ms + 300ms)
+        });
+
+    }, 400); // Wait for the initial transitions to complete before clearing and regenerating
 }
+
   
   // Function to update card order and re-render based on the API response
   function updateOrderAndRender(newOrder, attractions) {
@@ -85,72 +112,64 @@ function renderCards(attractions) {
     return cardContainer;
   }
   
-// Function to handle API response and update order
+/* -------------------------------------------------------------------------- */
+/*                               fix area starts                              */
+/* -------------------------------------------------------------------------- */
+
 function handleApiResponse(apiResponse, attractions) {
-  let newOrder = apiResponse.newOrder || null;
+  console.log("handleApiResponse called"); // Confirm function is called
 
-  // Check if the newOrder is a string and parse it into an array
-  if (typeof newOrder === 'string') {
-    try {
-      console.log("Received newOrder as a string:", newOrder); // Log the string version
-      newOrder = JSON.parse(newOrder); // Convert string to array
-      console.log("Parsed newOrder:", newOrder); // Log the parsed array
-    } catch (error) {
-      console.error("Error parsing newOrder string:", error);
-      return;
-    }
-  }
+  try {
+      // Declare newOrder explicitly
+      let newOrder = null;
 
-  // Check if the newOrder is valid and is an array
-  if (newOrder && Array.isArray(newOrder)) {
-    console.log("New order received:", newOrder);
+      // Check if apiResponse has the newOrder property
+      if (apiResponse && apiResponse.newOrder) {
+          newOrder = apiResponse.newOrder;
 
-    // Store the new order in sessionStorage
-    sessionStorage.setItem('attractionOrder', JSON.stringify(newOrder));
-    console.log("New order stored in sessionStorage:", sessionStorage.getItem('attractionOrder'));
-
-    // Re-render the cards using the new order
-    updateOrderAndRender(newOrder, attractions);
-  } else {
-    console.error("Invalid or missing newOrder in the API response.");
-  }
-}
-
-// Function to update card order and re-render
-function updateOrderAndRender(newOrder, attractions) {
-  // Store the new order in sessionStorage (if needed)
-  sessionStorage.setItem('attractionOrder', JSON.stringify(newOrder));
-
-  // Clear the existing card container and re-render based on new order
-  renderCards(attractions);
-}
-
-// Function to render cards based on sessionStorage order, showing only 3 cards
-function renderCards(attractions) {
-  const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
-  cardContainer.innerHTML = ''; // Clear existing cards
-
-  // Retrieve order from sessionStorage
-  const storedOrder = sessionStorage.getItem('attractionOrder');
-  console.log("Order retrieved from sessionStorage:", storedOrder); // Log the order from sessionStorage
-
-  if (storedOrder) {
-    const order = JSON.parse(storedOrder);
-
-    // Render the first 3 attractions only
-    order.slice(0, 3).forEach(id => {
-      const attraction = attractions.find(attraction => attraction.ID === id);
-      if (attraction) {
-        const card = generateCard(attraction);
-        cardContainer.appendChild(card);
+          if (typeof newOrder === 'string') {
+              console.log("Received newOrder as a string:", newOrder);
+              newOrder = JSON.parse(newOrder); // Attempt to parse the newOrder
+              console.log("Parsed newOrder:", newOrder);
+          }
+      } else {
+          console.error("No newOrder found in API response.");
+          return;
       }
-    });
-  } else {
-    console.error("No order found in sessionStorage.");
+
+      // Check if newOrder is now an array
+      if (newOrder && Array.isArray(newOrder)) {
+          console.log("New order received:", newOrder);
+
+          // Update sessionStorage
+          sessionStorage.setItem('attractionOrder', JSON.stringify(newOrder));
+          console.log("New order stored in sessionStorage:", sessionStorage.getItem('attractionOrder'));
+
+          // Confirm that sessionStorage was updated correctly
+          const storedOrder = sessionStorage.getItem('attractionOrder');
+          if (storedOrder) {
+              console.log("SessionStorage update confirmed:", storedOrder);
+          } else {
+              console.error("Failed to update sessionStorage.");
+          }
+
+          // Call updateOrderAndRender to re-render the cards
+          updateOrderAndRender(newOrder, attractions);
+      } else {
+          console.error("Invalid newOrder format in the API response.");
+      }
+  } catch (error) {
+      console.error("Error in handleApiResponse:", error);
   }
 }
 
 
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                fix area ends                               */
+/* -------------------------------------------------------------------------- */
 
   
   // Initialize like/dislike buttons for each card (unchanged)
@@ -174,23 +193,52 @@ function renderCards(attractions) {
   
   // Function to fetch and initialize data on page load
   async function initializePage() {
+    console.log("Initializing page...");
+
     const attractions = await fetchJSON("https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/src/data/attractions.json");
-  
+
     if (!sessionStorage.getItem('attractionOrder')) {
-      initializeOrder(attractions);
+        initializeOrder(attractions);
     }
-  
+
     renderCards(attractions);
     initializeLikeDislikeButtons();
-  }
+
+    // Call fetchApiResponse after a delay to avoid interfering with the initial page setup
+    setTimeout(async () => {
+        console.log("Calling fetchApiResponse...");
+        await fetchApiResponse();
+    }, 1000); // 1 second delay
+}
+
   
-  // Example function to fetch API response and update order
   async function fetchApiResponse() {
-    const apiResponse = await fetch("https://hp9axj.buildship.run/cluj").then(response => response.json());
-    const attractions = await fetchJSON("https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/src/data/attractions.json");
-    handleApiResponse(apiResponse, attractions);
-  }
+    try {
+        console.log("Fetching API response...");
+        const response = await fetch("https://hp9axj.buildship.run/cluj");
+
+        // Check if the response is successful
+        if (!response.ok) {
+            throw new Error(`API request failed with status ${response.status}`);
+        }
+
+        // Attempt to parse the response as JSON
+        const apiResponse = await response.json();
+        console.log("API response received:", apiResponse);
+        
+    } catch (error) {
+        console.error("Error in fetchApiResponse:", error);
+    }
+}
+
   
   // Initialize everything when the DOM is ready
-  document.addEventListener("DOMContentLoaded", initializePage);
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM fully loaded and parsed.");
+    initializePage(); // Make sure this function is being called.
+});
+
   
+  window.onerror = function (message, source, lineno, colno, error) {
+    console.error("Global Error Caught:", message, "at", source, ":", lineno, ":", colno, "Error Object:", error);
+};
