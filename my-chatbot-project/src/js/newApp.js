@@ -1,5 +1,12 @@
+window.onerror = function (message, source, lineno, colno, error) {
+  console.error("Global Error Caught:", message, "at", source, ":", lineno, ":", colno, "Error Object:", error);
+};
+
+
 /* ---- Begin chat.js content ---- */
 let attractions = [];
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   // Get references to DOM elements based on the provided HTML structure
@@ -149,6 +156,14 @@ function renderCards(attractions) {
   console.log("renderCards called."); // Log to confirm function execution
 
   const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
+
+  // Check if card container exists
+  if (!cardContainer) {
+      console.error("Card container element not found in the DOM.");
+      return; // Exit if the container is not found
+  }
+  console.log("Card container found in DOM.");
+
   const cards = document.querySelectorAll('.card');
 
   // Add transitions to existing cards before clearing them
@@ -168,18 +183,22 @@ function renderCards(attractions) {
       const order = JSON.parse(sessionStorage.getItem('attractionOrder'));
       console.log("Order retrieved from sessionStorage for rendering:", order);
 
-      // Loop through the order and find corresponding attractions
-      order.forEach(id => {
+      // Limit the rendering to the first 3 items in the order
+      let cardCount = 0;
+      for (let id of order) {
+          if (cardCount >= 3) break; // Stop after 3 cards
+
           const attraction = attractions.find(attraction => attraction.ID === id);
           if (attraction) {
               console.log("Generating card for attraction ID:", attraction.ID); // Log card creation
               const card = generateCard(attraction);
               card.classList.add('card-noshadow', 'card-blank'); // Add initial state classes
               cardContainer.appendChild(card);
+              cardCount++; // Increment the card count
           } else {
               console.warn("No matching attraction found for ID:", id);
           }
-      });
+      }
 
       // Trigger the reverse transitions for the newly generated cards
       const newCards = cardContainer.querySelectorAll('.card');
@@ -196,12 +215,24 @@ function renderCards(attractions) {
 }
 
 
+
+
+
   
   // Function to update card order and re-render based on the API response
-  function updateOrderAndRender(newOrder, attractions) {
+  async function updateOrderAndRender(newOrder) {
+    // Store the new order in sessionStorage
     sessionStorage.setItem('attractionOrder', JSON.stringify(newOrder));
+    console.log("Updated attractionOrder in sessionStorage:", newOrder);
+
+    // Re-fetch the attractions data
+    attractions = await fetchJSON("https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/src/data/attractions.json");
+    console.log("Refetched attractions data:", attractions);
+
+    // Call renderCards with the updated attractions data
     renderCards(attractions);
-  }
+}
+
   
   // Function to generate a single card (as in your previous logic)
   function generateCard(card) {
@@ -221,7 +252,10 @@ function renderCards(attractions) {
       : '<div class="chip">No tags available</div>';
   
     cardContainer.innerHTML = `
-      <div class="card-header">
+  
+    <div class="card-header">
+              <div class="promoted"><p>Top rated!"</p></div>
+
         <h3 class="card-title">${card.attractionName}</h3>
         <div class="like-dislike">
             <div class="toggle dislike"></div>
@@ -306,15 +340,21 @@ function renderCards(attractions) {
   
   // Function to fetch and initialize data on page load
   async function initializePage() {
-    const attractions = await fetchJSON("https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/src/data/attractions.json");
-  
+    console.log("Initializing page...");
+
+    attractions = await fetchJSON("https://boosterrocketjg.github.io/DOM-changes-PoC-1_0/my-chatbot-project/src/data/attractions.json");
+
     if (!sessionStorage.getItem('attractionOrder')) {
-      initializeOrder(attractions);
+        initializeOrder(attractions);
     }
-  
+
     renderCards(attractions);
     initializeLikeDislikeButtons();
-  }
+
+    // Call fetchApiResponse directly to test
+    console.log("Calling fetchApiResponse from initializePage...");
+    await fetchApiResponse();
+}
   
   // Example function to fetch API response and update order
   async function fetchApiResponse() {
