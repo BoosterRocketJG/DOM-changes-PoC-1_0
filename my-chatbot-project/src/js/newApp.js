@@ -224,15 +224,10 @@ function renderCards(attractions) {
           });
           isFirstLoad = false; // Set flag to false after first load
       }
-
+        // Initialize like/dislike buttons for the newly rendered cards
+        initializeLikeDislikeButtons();
   }, 400); // Wait for the initial transitions to complete before clearing and regenerating
 }
-
-
-
-
-
-
   
   // Function to update card order and re-render based on the API response
   async function updateOrderAndRender(newOrder) {
@@ -374,7 +369,6 @@ function renderCards(attractions) {
     }
 
     renderCards(attractions);
-    initializeLikeDislikeButtons();
 
     // Call fetchApiResponse directly to test
     console.log("Calling fetchApiResponse from initializePage...");
@@ -399,6 +393,31 @@ function renderCards(attractions) {
     console.error("Global Error Caught:", message, "at", source, ":", lineno, ":", colno, "Error Object:", error);
 };
 
+async function handleDislike(attractionID) {
+  console.log("Dislike clicked for attraction ID:", attractionID);
+
+  // Hide the card
+  const card = document.getElementById(`card-${attractionID}`);
+  if (card) {
+      card.classList.add('card-blank'); // Add a class to hide it with transitions
+      setTimeout(() => {
+          card.style.display = 'none'; // Hide the card completely after transition
+      }, 300); // Wait for transition to complete
+  }
+
+  // Reorder attractionsOrder in sessionStorage to move the disliked ID to the end
+  let attractionOrder = JSON.parse(sessionStorage.getItem('attractionOrder')) || [];
+  attractionOrder = attractionOrder.filter(id => id !== attractionID); // Remove the disliked ID
+  attractionOrder.push(attractionID); // Add it to the end
+  sessionStorage.setItem('attractionOrder', JSON.stringify(attractionOrder));
+  console.log("Updated attractionOrder in sessionStorage:", attractionOrder);
+
+  // Make an API call to notify the Assistant of the dislike action
+  await sendDislikeToAPI(attractionID);
+
+  // Re-render the cards to reflect the new order
+  renderCards(attractions);
+}
 
 /* ---- End app.js content ---- */
 
