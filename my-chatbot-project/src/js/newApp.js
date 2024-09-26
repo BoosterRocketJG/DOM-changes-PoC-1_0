@@ -6,6 +6,7 @@ window.onerror = function (message, source, lineno, colno, error) {
 /* ---- Begin chat.js content ---- */
 let attractions = [];
 
+let isFirstLoad = true; // Flag to check if it's the first page load
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -211,8 +212,20 @@ function renderCards(attractions) {
           }, 400); // Remove `card-noshadow` after 400ms (100ms + 300ms)
       });
 
+      // Handle the '.on' class for the "promoted" element
+      const promotedElement = document.querySelector('.promoted');
+      if (promotedElement) {
+          if (isFirstLoad) {
+              promotedElement.classList.add('on'); // Add the '.on' class on first load
+              isFirstLoad = false; // Set flag to false after first load
+          } else {
+              promotedElement.classList.remove('on'); // Remove the '.on' class after first reordering
+          }
+      }
+
   }, 400); // Wait for the initial transitions to complete before clearing and regenerating
 }
+
 
 
 
@@ -254,7 +267,7 @@ function renderCards(attractions) {
     cardContainer.innerHTML = `
   
     <div class="card-header">
-              <div class="promoted"><p>Top rated!"</p></div>
+              <div class="promoted"><p>Top rated!</p></div>
 
         <h3 class="card-title">${card.attractionName}</h3>
         <div class="like-dislike">
