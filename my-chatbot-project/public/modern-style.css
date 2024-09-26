@@ -1579,10 +1579,26 @@ display: none;
 .card-main-image-wrapper {
   border-style: solid;
   border-width: var(--line-weight);
+  max-height: 15em; /* Set a maximum height */
+  height: 15em; /* Set a fixed height */
+  width: 100%; /* Allow the width to be 100% of its parent */
+  overflow: hidden; /* Hide overflow if the image doesn't fit perfectly */
 }
+
 .card-main-image {
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Make the image fill the width of its container */
+  height: 100%; /* Make the image fill the height of its container */
+  object-fit: cover; /* Cover the entire area of the container */
+}
+
+
+.card-bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+}
+.description-wrapper {
+  min-height: 16em;
 }
 .text-input-wrapper {
   background-color: #f2f2f2;

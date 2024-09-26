@@ -194,6 +194,7 @@ function renderCards(attractions) {
               console.log("Generating card for attraction ID:", attraction.ID); // Log card creation
               const card = generateCard(attraction);
               card.classList.add('card-noshadow', 'card-blank'); // Add initial state classes
+
               cardContainer.appendChild(card);
               cardCount++; // Increment the card count
           } else {
@@ -212,15 +213,16 @@ function renderCards(attractions) {
           }, 400); // Remove `card-noshadow` after 400ms (100ms + 300ms)
       });
 
-      // Handle the '.on' class for the "promoted" element
-      const promotedElement = document.querySelector('.promoted');
-      if (promotedElement) {
-          if (isFirstLoad) {
-              promotedElement.classList.add('on'); // Add the '.on' class on first load
-              isFirstLoad = false; // Set flag to false after first load
-          } else {
-              promotedElement.classList.remove('on'); // Remove the '.on' class after first reordering
-          }
+      // Apply the '.on' class to the '.promoted' elements within the first three cards if it's the first load
+      if (isFirstLoad) {
+          const firstThreeCards = cardContainer.querySelectorAll('.card:nth-child(-n+3)');
+          firstThreeCards.forEach(card => {
+              const promotedElement = card.querySelector('.promoted');
+              if (promotedElement) {
+                  promotedElement.classList.add('on');
+              }
+          });
+          isFirstLoad = false; // Set flag to false after first load
       }
 
   }, 400); // Wait for the initial transitions to complete before clearing and regenerating
@@ -283,9 +285,15 @@ function renderCards(attractions) {
       <div class="card-main-image-wrapper">
         ${mainImage}
       </div>
+      <div class="card-bottom-wrapper">
+      <div class="description-wrapper">
       <p class="card-long-description">${card.longDescription}</p>
+      </div>
+      <div class="address-wrapper">
       <div class="card-address-1">${card.address1}</div>
       <div class="card-address-2">${card.address2}</div>
+      </div>
+      </div>
     `;
   
     return cardContainer;
@@ -338,15 +346,19 @@ function renderCards(attractions) {
     cards.forEach(card => {
       const likeButton = card.querySelector(".toggle.like");
       const dislikeButton = card.querySelector(".toggle.dislike");
+      
   
       likeButton.addEventListener("click", () => {
         likeButton.classList.toggle("active");
         dislikeButton.classList.remove("active");
+        console.log("Like button clicked")
       });
   
       dislikeButton.addEventListener("click", () => {
         dislikeButton.classList.toggle("active");
         likeButton.classList.remove("active");
+        console.log("Disike button clicked")
+
       });
     });
   }
