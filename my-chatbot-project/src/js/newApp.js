@@ -146,47 +146,55 @@ async function fetchJSON(filePath) {
   
 // Function to render cards based on sessionStorage order
 function renderCards(attractions) {
-    const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
-    const cards = document.querySelectorAll('.card');
+  console.log("renderCards called."); // Log to confirm function execution
 
-    // Add transitions to existing cards before clearing them
-    cards.forEach(card => {
-        card.classList.add('card-noshadow');
-        setTimeout(() => {
-            card.classList.add('card-blank');
-        }, 300); // Add `card-blank` after 300ms
-    });
+  const cardContainer = document.querySelector('.w-layout-hflex.cards-wrapper');
+  const cards = document.querySelectorAll('.card');
 
-    // Clear cards after transitions are completed (400ms to allow opacity transition)
-    setTimeout(() => {
-        cardContainer.innerHTML = ''; // Clear existing cards
+  // Add transitions to existing cards before clearing them
+  cards.forEach(card => {
+      card.classList.add('card-noshadow');
+      setTimeout(() => {
+          card.classList.add('card-blank');
+      }, 300); // Add `card-blank` after 300ms
+  });
 
-        // Retrieve order from sessionStorage
-        const order = JSON.parse(sessionStorage.getItem('attractionOrder'));
+  // Clear cards after transitions are completed (400ms to allow opacity transition)
+  setTimeout(() => {
+      console.log("Clearing existing cards..."); // Log before clearing cards
+      cardContainer.innerHTML = ''; // Clear existing cards
 
-        // Loop through the order and find corresponding attractions
-        order.forEach(id => {
-            const attraction = attractions.find(attraction => attraction.ID === id);
-            if (attraction) {
-                const card = generateCard(attraction);
-                card.classList.add('card-noshadow', 'card-blank'); // Add initial state classes
-                cardContainer.appendChild(card);
-            }
-        });
+      // Retrieve order from sessionStorage
+      const order = JSON.parse(sessionStorage.getItem('attractionOrder'));
+      console.log("Order retrieved from sessionStorage for rendering:", order);
 
-        // Trigger the reverse transitions for the newly generated cards
-        const newCards = cardContainer.querySelectorAll('.card');
-        newCards.forEach(card => {
-            setTimeout(() => {
-                card.classList.remove('card-blank');
-            }, 600); // Remove `card-blank` after 100ms
-            setTimeout(() => {
-                card.classList.remove('card-noshadow');
-            }, 400); // Remove `card-noshadow` after 400ms (100ms + 300ms)
-        });
+      // Loop through the order and find corresponding attractions
+      order.forEach(id => {
+          const attraction = attractions.find(attraction => attraction.ID === id);
+          if (attraction) {
+              console.log("Generating card for attraction ID:", attraction.ID); // Log card creation
+              const card = generateCard(attraction);
+              card.classList.add('card-noshadow', 'card-blank'); // Add initial state classes
+              cardContainer.appendChild(card);
+          } else {
+              console.warn("No matching attraction found for ID:", id);
+          }
+      });
 
-    }, 400); // Wait for the initial transitions to complete before clearing and regenerating
+      // Trigger the reverse transitions for the newly generated cards
+      const newCards = cardContainer.querySelectorAll('.card');
+      newCards.forEach(card => {
+          setTimeout(() => {
+              card.classList.remove('card-blank');
+          }, 100); // Remove `card-blank` after 100ms
+          setTimeout(() => {
+              card.classList.remove('card-noshadow');
+          }, 400); // Remove `card-noshadow` after 400ms (100ms + 300ms)
+      });
+
+  }, 400); // Wait for the initial transitions to complete before clearing and regenerating
 }
+
 
   
   // Function to update card order and re-render based on the API response
