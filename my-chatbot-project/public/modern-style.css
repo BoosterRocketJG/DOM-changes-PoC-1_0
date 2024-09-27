@@ -1421,6 +1421,7 @@ textarea.w-select {
   padding-bottom: 20px;
   display: flex;
   position: relative;
+  min-height: 12em;
 }
 .promoted {
 display: none;
