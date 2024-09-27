@@ -17,7 +17,7 @@ html {
   background-color: var(--primary-blue);
   min-height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Behind The Nineties",Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -26,6 +26,12 @@ body {
   margin: 0;
   background-color: var(--primary-blue);
 }
+
+@font-face {
+  font-family: "Behind The Nineties";
+  src: url("/my-chatbot-project/src/fonts/behind-the-nineties/WOFF2/UPRIGHT/Behind-The-Nineties-Rg.woff2") format('woff');
+}
+
 
 article,
 aside,
@@ -232,6 +238,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Behind The Nineties", Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
   font-weight: bold;
 }
