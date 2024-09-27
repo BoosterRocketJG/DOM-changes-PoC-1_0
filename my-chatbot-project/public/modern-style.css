@@ -1426,7 +1426,7 @@ display: none;
 }
 .promoted.on {
   position: absolute;
-    bottom: 6.2em;
+    top: -1em;
     right: 0em;
     transform: rotate(15deg);
     background-color: black;
