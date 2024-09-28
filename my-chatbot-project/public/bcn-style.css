@@ -1,12 +1,59 @@
 :root {
+  font-size: 62.5%;
   --primary-blue: #25caba;
   --pale-yellow: #e4f4ba;
   --orange: #e5ad27;
   --burned-orange: #d2671b;
   --brown: #9d3f10;
-  font-size: 62.5%;
   --line-weight: 4px;
+  --main-border-radius: 5em;
+  --lg-border-radius: 10em;
+  --sml-border-radius: 2em;
   
+}
+
+/* Upright Normal */
+@font-face {
+  font-family: "Behind The Nineties";
+  src: url("/my-chatbot-project/src/fonts/behind-the-nineties/WOFF2/UPRIGHT/Behind-The-Nineties-Rg.woff2") format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Behind The Nineties";
+  src: url("/my-chatbot-project/src/fonts/behind-the-nineties/WOFF2/UPRIGHT/Behind-The-Nineties-Bd.woff2") format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Behind The Nineties";
+  src: url("/my-chatbot-project/src/fonts/behind-the-nineties/WOFF2/UPRIGHT/Behind-The-Nineties-Blk.woff2") format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Behind The Nineties";
+  src: url("/my-chatbot-project/src/fonts/behind-the-nineties/WOFF2/ITALIC/Behind-The-Nineties-It.woff2") format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Behind The Nineties";
+  src: url("/my-chatbot-project/src/fonts/behind-the-nineties/WOFF2/ITALIC/Behind-The-Nineties-Bd-It.woff2") format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Behind The Nineties";
+  src: url("/my-chatbot-project/src/fonts/behind-the-nineties/WOFF2/ITALIC/Behind-The-Nineties-Blk-It.woff2") format('woff2');
+  font-weight: 900;
+  font-style: italic;
 }
 
 html {
@@ -14,7 +61,6 @@ html {
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
   color: var(--brown);
-  background-color: var(--primary-blue);
   min-height: 100%;
   margin: 0;
   font-family: "Behind The Nineties",Arial, sans-serif;
@@ -24,12 +70,12 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--primary-blue);
-}
-
-@font-face {
-  font-family: "Behind The Nineties";
-  src: url("/my-chatbot-project/src/fonts/behind-the-nineties/WOFF2/UPRIGHT/Behind-The-Nineties-Rg.woff2") format('woff');
+  background-color: var(--pale-yellow);
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-style: normal;
+  font-weight: 300;
 }
 
 
@@ -87,11 +133,6 @@ strong {
 
 dfn {
   font-style: italic;
-}
-
-h1 {
-  margin: 0.67em 0;
-  font-size: 2em;
 }
 
 mark {
@@ -244,15 +285,22 @@ h6 {
 }
 
 h1 {
-  margin-top: 20px;
-  font-size: 38px;
-  line-height: 44px;
+  margin-top: 5em;
+  color: var(--burned-orange);
+  margin: 0.67em 0;
+  font-size: 6em;
+  letter-spacing: -.01em;
+  word-spacing: 0.2em;
+  font-weight: 300;
+  font-style: italic;
 }
 
 h2 {
-  margin-top: 20px;
-  font-size: 32px;
-  line-height: 36px;
+  margin-top: 3em;
+  line-height: 2em;
+  color: var(--burned-orange);
+  font-weight: 600;
+  font-size: 3em;
 }
 
 h3 {
@@ -361,9 +409,10 @@ label {
   padding-bottom: 20px;
   display: flex;
   overflow-y: scroll;
-  box-shadow: inset 3px 3px 6px #ccdbe8, inset -3px -3px 6px 1px #ffffff80;
+  box-shadow: inset 6px 6px 6px #d8e4ba, inset -3px -3px 6px 1px #abac9980;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+  border-radius: var(--lg-border-radius);
 }
 
 .chat-input-wrapper {
@@ -371,15 +420,6 @@ label {
   justify-content: flex-start;
   align-items: flex-start;
   height: 90px;
-}
-
-.body {
-  background-color: #fafafa;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: Inconsolata, monospace;
-  font-size: 62.5%;
 }
 
 .cards-wrapper {
@@ -390,13 +430,13 @@ label {
 }
 
 .card {
-  border-radius: 5px;
+  border-radius: var(--main-border-radius);
   width: 40em;
   height: 100%;
   min-height: 63em;
   padding: 20px 20px 20px 30px;
   font-size: 1rem;
-  box-shadow: 6px 2px 10px #dbe7f17a, -6px -2px 10px #ffffffe6;
+  box-shadow: inset 6px 6px 6px #d8e4ba, -3px -3px 6px 1px #abac9980;
   transition: all 700ms ease-in, opacity 900ms cubic-bezier(.22,.68,0,1.71)  ;
 }
 .card-noshadow {
@@ -700,10 +740,6 @@ display: none;
 
 .flex-block {
   flex-flow: row;
-}
-
-.heading-2 {
-  font-size: 3rem;
 }
 
 .div-block {
