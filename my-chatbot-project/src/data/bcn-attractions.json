@@ -5,16 +5,25 @@
     "shortDescription": "A unique park showcasing Gaudi's whimsical architectural style.",
     "longDescription": "Park Güell is a public park system composed of gardens and architectonic elements located on Carmel Hill. Designed by Antoni Gaudi, the park is a stunning blend of natural beauty and eccentric artistry, with panoramic views of Barcelona.",
     "price": 1,
-    "tags": ["Outdoor", "Family-Friendly", "Art", "Architecture"],
+    "tags": [
+      "Outdoor",
+      "Family-Friendly",
+      "Art",
+      "Architecture"
+    ],
     "address1": "Carrer d'Olot, s/n",
     "address2": "Gràcia",
     "areaName": "Gràcia",
     "coordinates": "41.414494,2.152694",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Outdoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100
@@ -25,16 +34,25 @@
     "shortDescription": "An amusement park with thrilling rides and breathtaking views of Barcelona.",
     "longDescription": "Tibidabo Amusement Park is a historic theme park located on Tibidabo Mountain. It offers a variety of rides and attractions for all ages, along with stunning panoramic views of the city. The park combines old-fashioned charm with modern excitement, making it a fun destination for families and thrill-seekers alike.",
     "price": 2,
-    "tags": ["Outdoor", "Family-Friendly", "Amusement Park", "Scenic"],
+    "tags": [
+      "Outdoor",
+      "Family-Friendly",
+      "Amusement Park",
+      "Scenic"
+    ],
     "address1": "Plaça del Tibidabo, 3-4",
     "address2": "Sarrià-Sant Gervasi",
     "areaName": "Sarrià-Sant Gervasi",
     "coordinates": "41.425800,2.118300",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Outdoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100
@@ -45,16 +63,25 @@
     "shortDescription": "Gaudi's masterpiece and an iconic symbol of Barcelona.",
     "longDescription": "The Sagrada Familia is an unfinished basilica and one of Gaudi's most famous works. This architectural marvel blends Gothic and Art Nouveau forms in its complex design and intricate facades. A must-visit for art and architecture enthusiasts.",
     "price": 2,
-    "tags": ["Indoor", "Art", "Architecture", "Religious"],
+    "tags": [
+      "Indoor",
+      "Art",
+      "Architecture",
+      "Religious"
+    ],
     "address1": "Carrer de Mallorca, 401",
     "address2": "Eixample",
     "areaName": "Eixample",
     "coordinates": "41.403629,2.174356",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 6,
     "childSuitability_max": 100
@@ -65,16 +92,24 @@
     "shortDescription": "A surreal art museum dedicated to Salvador Dali.",
     "longDescription": "The Dali Theatre-Museum in Figueres is dedicated to the works of the surrealist artist Salvador Dali. It features an extensive collection of his art, including paintings, sculptures, and installations, offering an immersive experience into his unique vision.",
     "price": 2,
-    "tags": ["Indoor", "Art", "Museum"],
+    "tags": [
+      "Indoor",
+      "Art",
+      "Museum"
+    ],
     "address1": "Plaça Gala i Salvador Dalí, 5",
     "address2": "Figueres",
     "areaName": "Figueres",
     "coordinates": "42.267222,2.961389",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 10,
     "childSuitability_max": 100
@@ -85,16 +120,24 @@
     "shortDescription": "A modernist building designed by Antoni Gaudi.",
     "longDescription": "Casa Batlló is a renowned building in the heart of Barcelona, designed by the famous architect Antoni Gaudi. Known for its organic forms, vibrant colors, and imaginative use of materials, it stands as one of the most significant icons of modernist architecture.",
     "price": 3,
-    "tags": ["Indoor", "Art", "Architecture"],
+    "tags": [
+      "Indoor",
+      "Art",
+      "Architecture"
+    ],
     "address1": "Passeig de Gràcia, 43",
     "address2": "Eixample",
     "areaName": "Eixample",
     "coordinates": "41.391640,2.164924",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 8,
     "childSuitability_max": 100
@@ -105,37 +148,54 @@
     "shortDescription": "A bustling market offering fresh produce and local delicacies.",
     "longDescription": "La Boqueria is a vibrant market located on La Rambla, offering an array of fresh fruits, vegetables, meats, seafood, and traditional Catalan food. It's a feast for the senses and a great spot to explore Barcelona's culinary culture.",
     "price": 2,
-    "tags": ["Indoor", "Market", "Food", "Free"],
+    "tags": [
+      "Indoor",
+      "Market",
+      "Food",
+      "Free"
+    ],
     "address1": "La Rambla, 91",
     "address2": "Ciutat Vella",
     "areaName": "Ciutat Vella",
     "coordinates": "41.382872,2.171481",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100
   },
-
   {
     "ID": 100006,
     "attractionName": "Gothic Quarter (Barri Gòtic)",
     "shortDescription": "A maze of narrow medieval streets with historic charm.",
     "longDescription": "The Gothic Quarter is the oldest part of Barcelona, featuring medieval buildings, narrow alleys, hidden squares, and a rich history that spans Roman times to the present day. It's a great area for exploration and photography.",
     "price": 0,
-    "tags": ["Outdoor", "Historic", "Free"],
+    "tags": [
+      "Outdoor",
+      "Historic",
+      "Free"
+    ],
     "address1": "Barri Gòtic",
     "address2": "Ciutat Vella",
     "areaName": "Ciutat Vella",
     "coordinates": "41.383400,2.176300",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon", "Evening"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon",
+      "Evening"
+    ],
     "indoorOutdoor": "Outdoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100
@@ -146,16 +206,24 @@
     "shortDescription": "A stunning modernist building designed by Gaudi.",
     "longDescription": "Also known as Casa Milà, La Pedrera is an iconic modernist building designed by Antoni Gaudi. It features an undulating stone facade and an exceptional rooftop terrace with whimsical sculptures. Visitors can explore its unique architecture and Gaudi's creative genius.",
     "price": 3,
-    "tags": ["Indoor", "Architecture", "Art"],
+    "tags": [
+      "Indoor",
+      "Architecture",
+      "Art"
+    ],
     "address1": "Passeig de Gràcia, 92",
     "address2": "Eixample",
     "areaName": "Eixample",
     "coordinates": "41.395540,2.161704",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 8,
     "childSuitability_max": 100
@@ -166,16 +234,25 @@
     "shortDescription": "The home stadium of FC Barcelona.",
     "longDescription": "Camp Nou is the legendary home of FC Barcelona, one of the most successful football clubs in the world. The stadium offers guided tours where visitors can explore the museum, trophy room, and even step onto the pitch.",
     "price": 2,
-    "tags": ["Indoor", "Outdoor", "Sports", "Tour"],
+    "tags": [
+      "Indoor",
+      "Outdoor",
+      "Sports",
+      "Tour"
+    ],
     "address1": "Carrer d'Arístides Maillol",
     "address2": "Les Corts",
     "areaName": "Les Corts",
     "coordinates": "41.380900,2.122820",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Both",
     "childSuitability_min": 6,
     "childSuitability_max": 100
@@ -186,16 +263,24 @@
     "shortDescription": "A historic absinthe bar with an old-world charm.",
     "longDescription": "Bar Marsella is one of the oldest bars in Barcelona, known for its classic absinthe and unique bohemian atmosphere. Frequented by famous artists and writers, it retains its vintage decor and nostalgic charm.",
     "price": 1,
-    "tags": ["Indoor", "Bar", "Historic"],
+    "tags": [
+      "Indoor",
+      "Bar",
+      "Historic"
+    ],
     "address1": "Carrer de Sant Pau, 65",
     "address2": "Raval",
     "areaName": "Raval",
     "coordinates": "41.380607,2.171227",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Evening", "Night"],
+    "timeOfDay": [
+      "Evening",
+      "Night"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 18,
     "childSuitability_max": 100
@@ -206,16 +291,24 @@
     "shortDescription": "A cozy restaurant offering traditional Basque cuisine.",
     "longDescription": "Gastarea is a quaint restaurant located in the Gràcia district, known for its delicious Basque dishes. It's a cozy spot with a rustic atmosphere, offering a range of tapas and regional specialties perfect for a relaxed meal.",
     "price": 2,
-    "tags": ["Indoor", "Restaurant", "Food"],
+    "tags": [
+      "Indoor",
+      "Restaurant",
+      "Food"
+    ],
     "address1": "Carrer de Verdi, 39",
     "address2": "Gràcia",
     "areaName": "Gràcia",
     "coordinates": "41.403610,2.159890",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Afternoon", "Evening"],
+    "timeOfDay": [
+      "Afternoon",
+      "Evening"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100
@@ -226,16 +319,24 @@
     "shortDescription": "A hub for modern and contemporary art in Barcelona.",
     "longDescription": "The MACBA showcases an impressive collection of modern and contemporary art from the mid-20th century onward. It's an iconic cultural space with thought-provoking exhibitions, performances, and educational activities set within a striking building.",
     "price": 2,
-    "tags": ["Indoor", "Art", "Museum"],
+    "tags": [
+      "Indoor",
+      "Art",
+      "Museum"
+    ],
     "address1": "Plaça dels Àngels, 1",
     "address2": "Raval",
     "areaName": "Raval",
     "coordinates": "41.383900,2.166000",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 10,
     "childSuitability_max": 100
@@ -246,16 +347,24 @@
     "shortDescription": "A lively bar offering cocktails and a vibrant atmosphere.",
     "longDescription": "Bar Ambar is a trendy spot in Barcelona's nightlife scene, known for its eclectic cocktail menu and stylish decor. It's a great place to unwind with friends and enjoy the city's vibrant social scene.",
     "price": 1,
-    "tags": ["Indoor", "Bar", "Nightlife"],
+    "tags": [
+      "Indoor",
+      "Bar",
+      "Nightlife"
+    ],
     "address1": "Carrer d'Aribau, 123",
     "address2": "Eixample",
     "areaName": "Eixample",
     "coordinates": "41.392200,2.160400",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Evening", "Night"],
+    "timeOfDay": [
+      "Evening",
+      "Night"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 18,
     "childSuitability_max": 100
@@ -266,16 +375,23 @@
     "shortDescription": "An underground club with eclectic music and an alternative vibe.",
     "longDescription": "Maumau Underground is a hidden gem in Barcelona's nightlife, offering an eclectic mix of music, including electronic, jazz, and hip-hop. The club is known for its unique interior, relaxed vibe, and diverse crowd.",
     "price": 1,
-    "tags": ["Indoor", "Nightlife", "Music"],
+    "tags": [
+      "Indoor",
+      "Nightlife",
+      "Music"
+    ],
     "address1": "Carrer de Fontrodona, 35",
     "address2": "Poble-sec",
     "areaName": "Poble-sec",
     "coordinates": "41.373800,2.163100",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Night"],
+    "timeOfDay": [
+      "Night"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 18,
     "childSuitability_max": 100
@@ -286,16 +402,25 @@
     "shortDescription": "A hands-on science museum for all ages.",
     "longDescription": "CosmoCaixa is Barcelona's science museum featuring interactive exhibits, a planetarium, and a stunning indoor rainforest. It's designed to engage visitors of all ages with the wonders of science and nature.",
     "price": 1,
-    "tags": ["Indoor", "Science", "Museum", "Family-Friendly"],
+    "tags": [
+      "Indoor",
+      "Science",
+      "Museum",
+      "Family-Friendly"
+    ],
     "address1": "Carrer d'Isaac Newton, 26",
     "address2": "Sarrià-Sant Gervasi",
     "areaName": "Sarrià-Sant Gervasi",
     "coordinates": "41.410200,2.134300",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Morning", "Afternoon"],
+    "timeOfDay": [
+      "Morning",
+      "Afternoon"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 4,
     "childSuitability_max": 100
@@ -306,16 +431,24 @@
     "shortDescription": "A historic music venue hosting live concerts and club nights.",
     "longDescription": "Sala Apolo is one of Barcelona's premier music venues, offering a range of live performances from rock to electronic music. Its vintage decor and high-quality sound system make it a favorite spot for both locals and visitors.",
     "price": 2,
-    "tags": ["Indoor", "Music", "Nightlife"],
+    "tags": [
+      "Indoor",
+      "Music",
+      "Nightlife"
+    ],
     "address1": "Carrer Nou de la Rambla, 113",
     "address2": "Poble-sec",
     "areaName": "Poble-sec",
     "coordinates": "41.375000,2.169000",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Evening", "Night"],
+    "timeOfDay": [
+      "Evening",
+      "Night"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 18,
     "childSuitability_max": 100
@@ -326,16 +459,23 @@
     "shortDescription": "A massive club with multiple rooms playing diverse music genres.",
     "longDescription": "Razzmatazz is an iconic club in Barcelona, known for its diverse music selection across five rooms. It offers everything from pop to techno, indie rock, and live concerts, making it a must-visit for music lovers and night owls.",
     "price": 3,
-    "tags": ["Indoor", "Music", "Nightlife"],
+    "tags": [
+      "Indoor",
+      "Music",
+      "Nightlife"
+    ],
     "address1": "Carrer dels Almogàvers, 122",
     "address2": "Sant Martí",
     "areaName": "Sant Martí",
     "coordinates": "41.395600,2.192800",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Night"],
+    "timeOfDay": [
+      "Night"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 18,
     "childSuitability_max": 100
@@ -346,16 +486,24 @@
     "shortDescription": "A lively Mexican restaurant with a colorful ambiance.",
     "longDescription": "Rosa Negra Raval is a Mexican restaurant known for its vibrant atmosphere, affordable prices, and delicious food. With its colorful decor and extensive cocktail menu, it's a great spot for casual dining and socializing.",
     "price": 1,
-    "tags": ["Indoor", "Restaurant", "Food"],
+    "tags": [
+      "Indoor",
+      "Restaurant",
+      "Food"
+    ],
     "address1": "Carrer dels Àngels, 6",
     "address2": "Raval",
     "areaName": "Raval",
     "coordinates": "41.383000,2.168800",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Afternoon", "Evening"],
+    "timeOfDay": [
+      "Afternoon",
+      "Evening"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100
@@ -366,16 +514,26 @@
     "shortDescription": "A lively square in the Gràcia district with bars and cafes.",
     "longDescription": "Plaça del Sol is a popular square in Gràcia known for its lively atmosphere, surrounded by cafes, bars, and restaurants. It's a great spot to relax, people-watch, and soak up the local culture, especially in the evenings.",
     "price": 0,
-    "tags": ["Outdoor", "Square", "Free", "Nightlife"],
+    "tags": [
+      "Outdoor",
+      "Square",
+      "Free",
+      "Nightlife"
+    ],
     "address1": "Plaça del Sol",
     "address2": "Gràcia",
     "areaName": "Gràcia",
     "coordinates": "41.401200,2.157000",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Afternoon", "Evening", "Night"],
+    "timeOfDay": [
+      "Afternoon",
+      "Evening",
+      "Night"
+    ],
     "indoorOutdoor": "Outdoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100
@@ -386,16 +544,24 @@
     "shortDescription": "A fusion restaurant offering Japanese-Spanish cuisine.",
     "longDescription": "Can Kenji is a unique restaurant that combines Japanese cooking techniques with Spanish ingredients. With its cozy setting and innovative dishes, it offers an exceptional dining experience for food lovers seeking something different.",
     "price": 2,
-    "tags": ["Indoor", "Restaurant", "Food"],
+    "tags": [
+      "Indoor",
+      "Restaurant",
+      "Food"
+    ],
     "address1": "Carrer del Comte d'Urgell, 77",
     "address2": "Eixample",
     "areaName": "Eixample",
     "coordinates": "41.384800,2.156900",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Afternoon", "Evening"],
+    "timeOfDay": [
+      "Afternoon",
+      "Evening"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100
@@ -406,16 +572,24 @@
     "shortDescription": "A classic tapas bar with traditional Spanish dishes.",
     "longDescription": "Morryssom is a beloved tapas bar known for its classic Spanish dishes and friendly atmosphere. With a diverse menu of tapas and a cozy setting, it's a great place to experience authentic Spanish cuisine in a casual environment.",
     "price": 1,
-    "tags": ["Indoor", "Restaurant", "Food"],
+    "tags": [
+      "Indoor",
+      "Restaurant",
+      "Food"
+    ],
     "address1": "Carrer de Girona, 162",
     "address2": "Eixample",
     "areaName": "Eixample",
     "coordinates": "41.396300,2.168700",
     "carouselImages": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/14-08-05-barcelona-RalfR-001.jpg"
     ],
-    "timeOfDay": ["Afternoon", "Evening"],
+    "timeOfDay": [
+      "Afternoon",
+      "Evening"
+    ],
     "indoorOutdoor": "Indoor",
     "childSuitability_min": 0,
     "childSuitability_max": 100

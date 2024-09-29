@@ -236,7 +236,7 @@ function renderCards(attractions) {
     console.log("Updated attractionOrder in sessionStorage:", newOrder);
 
     // Re-fetch the attractions data
-    attractions = await fetchJSON("my-chatbot-project/src/data/bcn-attractions.json");
+    attractions = await fetchJSON("../data/attractions.json");
     console.log("Refetched attractions data:", attractions);
 
     // Call renderCards with the updated attractions data
@@ -362,7 +362,7 @@ function renderCards(attractions) {
   async function initializePage() {
     console.log("Initializing page...");
 
-    attractions = await fetchJSON("my-chatbot-project/src/data/bcn-attractions.json");
+    attractions = await fetchJSON("../data/attractions.json");
 
     if (!sessionStorage.getItem('attractionOrder')) {
         initializeOrder(attractions);
@@ -378,7 +378,7 @@ function renderCards(attractions) {
   // Example function to fetch API response and update order
   async function fetchApiResponse() {
     const apiResponse = await fetch("https://hp9axj.buildship.run/cluj").then(response => response.json());
-    const attractions = await fetchJSON("my-chatbot-project/src/data/bcn-attractions.json");
+    const attractions = await fetchJSON("../data/attractions.json");
     handleApiResponse(apiResponse, attractions);
   }
   
