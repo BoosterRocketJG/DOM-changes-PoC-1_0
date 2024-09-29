@@ -6,6 +6,7 @@
   --burned-orange: #d2671b;
   --brown: #9d3f10;
   --line-weight: 4px;
+  --line-weight-thick: 8px;
   --main-border-radius: 5em;
   --lg-border-radius: 10em;
   --sml-border-radius: 2em;
@@ -59,7 +60,6 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: sans-serif;
   color: var(--brown);
   min-height: 100%;
   margin: 0;
@@ -76,6 +76,8 @@ body {
   align-items: center;
   font-style: normal;
   font-weight: 300;
+  background-image: url(/my-chatbot-project/public/assets/bg/seamless-subtle-texture-08.webp);
+  background-blend-mode:multiply;
 }
 
 
@@ -282,16 +284,18 @@ h6 {
   font-family: "Behind The Nineties", Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
   font-weight: bold;
+  text-shadow: .1rem .2rem var(--orange),
+  -.1rem -.1rem var(--primary-blue);
 }
 
 h1 {
   margin-top: 5em;
-  color: var(--burned-orange);
+  color: var(--brown);
   margin: 0.67em 0;
   font-size: 6em;
   letter-spacing: -.01em;
   word-spacing: 0.2em;
-  font-weight: 300;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -394,7 +398,7 @@ label {
 .chat-wrapper {
   border-radius: 5px;
   flex-flow: column;
-  height: 80em;
+  height: 20em;
   display: flex;
   width: 60em;
 }
@@ -431,13 +435,17 @@ label {
 
 .card {
   border-radius: var(--main-border-radius);
-  width: 40em;
-  height: 100%;
-  min-height: 63em;
-  padding: 20px 20px 20px 30px;
+  height: 40em;
+  padding: 2em;
   font-size: 1rem;
-  box-shadow: inset 6px 6px 6px #d8e4ba, -3px -3px 6px 1px #abac9980;
   transition: all 700ms ease-in, opacity 900ms cubic-bezier(.22,.68,0,1.71)  ;
+  border-width: var(--line-weight-thick);
+  border-style: double;
+  margin: 2em;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+  max-width: 18em;
+
 }
 .card-noshadow {
   box-shadow: none;
@@ -464,10 +472,14 @@ display: none;
     top: -3em;
     right: 0em;
     transform: rotate(11deg);
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    font-style: italic;
     background-color: var(--orange);
     color: white;
-    padding: 0.7em 0.5em 0em 0.6em;
-    border-radius: 5px;
+    padding: 0.7em 0.7em 0em 0.7em;
+    border-radius: var(--sml-border-radius);
     display: block;
 }
 
@@ -512,7 +524,7 @@ display: none;
 .card-body,
 .image {
   width: 100%;
-  height: 100%;
+  height: 4em;
 }
 .card-quickview {
   display: flex;
@@ -542,6 +554,7 @@ display: none;
 .card-short-description {
   border-width: var(--line-weight);
   padding: 0.5em 0em;
+  font-weight: 600;
 }
 .card-short-description {  
   grid-area: 3 / 1 / 6 / 4;
@@ -565,18 +578,20 @@ display: none;
 }
 
 .chip {
-  background-color: #ededed;
+  background-color: var(--primary-blue);
+  color: var(--pale-yellow);
   border-radius: 2px;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 10px;
   margin-left: 10px;
-  padding: 5px 10px;
-  font-size: 0.8rem;
-  font-weight: 700;
+  padding: 8px 10px;
+  font-weight: 600;
   display: flex;
-  max-width: 10rem;
   line-height: 1.1em;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 0.05em;
 }
 
 .chip img {
