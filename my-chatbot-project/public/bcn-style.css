@@ -67,9 +67,12 @@ html {
   margin: 0;
   font-family: "Behind The Nineties", Arial, sans-serif;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   font-size: 14px;
 >>>>>>> d914b68 (updated some images)
+=======
+>>>>>>> d864a17 (Working!)
   line-height: 20px;
 }
 
@@ -421,10 +424,14 @@ label {
   display: flex;
   overflow-y: scroll;
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-shadow: inset 6px 6px 6px #abac9980, inset -3px -3px 6px 1px #d8e4ba;
 =======
   box-shadow: inset 6px 6px 6px #d8e4ba, inset -3px -3px 6px 1px #abac9980;
 >>>>>>> d914b68 (updated some images)
+=======
+  box-shadow: inset 6px 6px 6px #abac9980, inset -3px -3px 6px 1px #d8e4ba;
+>>>>>>> d864a17 (Working!)
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -461,10 +468,14 @@ label {
 .card {
   border-radius: var(--border-radius-main);
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 45em;
 =======
   height: 40em;
 >>>>>>> d914b68 (updated some images)
+=======
+  height: 45em;
+>>>>>>> d864a17 (Working!)
   padding: 2em 2em 3em 2em;
   transition: all 700ms ease-in, opacity 900ms cubic-bezier(.22, .68, 0, 1.71);
   border-width: var(--line-weight-thick);
@@ -473,10 +484,14 @@ label {
   font-size: 1.8rem;
   letter-spacing: var(--letter-spacing-sml);
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 20em;
 =======
   max-width: 24em;
 >>>>>>> d914b68 (updated some images)
+=======
+  max-width: 20em;
+>>>>>>> d864a17 (Working!)
 
 }
 
@@ -497,9 +512,13 @@ label {
   position: relative;
   padding: 0 0 1em 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: 5em;
 =======
 >>>>>>> d914b68 (updated some images)
+=======
+  min-height: 5em;
+>>>>>>> d864a17 (Working!)
 }
 
 .promoted {
@@ -700,6 +719,7 @@ label {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 .card-bottom-wrapper {
@@ -708,6 +728,9 @@ label {
   padding: 2em 0;
 }
 >>>>>>> d914b68 (updated some images)
+=======
+
+>>>>>>> d864a17 (Working!)
 
 .description-wrapper {
 height: 8em;
@@ -719,10 +742,14 @@ height: 8em;
   min-height: 90px;
   padding: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-shadow: inset 6px 6px 6px #abac9980, inset -3px -3px 6px 1px #d8e4ba;
 =======
   box-shadow: inset 3px 3px 6px #ccdbe8, inset -3px -3px 6px 1px #ffffff80;
 >>>>>>> d914b68 (updated some images)
+=======
+  box-shadow: inset 6px 6px 6px #abac9980, inset -3px -3px 6px 1px #d8e4ba;
+>>>>>>> d864a17 (Working!)
   position: relative
 }
 
@@ -809,6 +836,7 @@ height: 8em;
   justify-content: space-between;
   position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
   flex-direction: column;
   padding: 1.5em 0;
 =======
@@ -819,6 +847,10 @@ height: 8em;
   padding-top: 10px;
   min-height: 8em;
 >>>>>>> d914b68 (updated some images)
+=======
+  flex-direction: column;
+  padding: 1.5em 0;
+>>>>>>> d864a17 (Working!)
 }
 
 .card-address-1 {
