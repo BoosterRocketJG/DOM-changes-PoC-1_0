@@ -66,6 +66,10 @@ html {
   min-height: 100%;
   margin: 0;
   font-family: "Behind The Nineties", Arial, sans-serif;
+<<<<<<< HEAD
+=======
+  font-size: 14px;
+>>>>>>> d914b68 (updated some images)
   line-height: 20px;
 }
 
@@ -416,7 +420,11 @@ label {
   padding-bottom: 20px;
   display: flex;
   overflow-y: scroll;
+<<<<<<< HEAD
   box-shadow: inset 6px 6px 6px #abac9980, inset -3px -3px 6px 1px #d8e4ba;
+=======
+  box-shadow: inset 6px 6px 6px #d8e4ba, inset -3px -3px 6px 1px #abac9980;
+>>>>>>> d914b68 (updated some images)
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -452,7 +460,11 @@ label {
 
 .card {
   border-radius: var(--border-radius-main);
+<<<<<<< HEAD
   height: 45em;
+=======
+  height: 40em;
+>>>>>>> d914b68 (updated some images)
   padding: 2em 2em 3em 2em;
   transition: all 700ms ease-in, opacity 900ms cubic-bezier(.22, .68, 0, 1.71);
   border-width: var(--line-weight-thick);
@@ -460,7 +472,11 @@ label {
   margin: 2em;
   font-size: 1.8rem;
   letter-spacing: var(--letter-spacing-sml);
+<<<<<<< HEAD
   max-width: 20em;
+=======
+  max-width: 24em;
+>>>>>>> d914b68 (updated some images)
 
 }
 
@@ -480,7 +496,10 @@ label {
   display: flex;
   position: relative;
   padding: 0 0 1em 0;
+<<<<<<< HEAD
   min-height: 5em;
+=======
+>>>>>>> d914b68 (updated some images)
 }
 
 .promoted {
@@ -680,7 +699,15 @@ label {
 }
 
 
+<<<<<<< HEAD
 
+=======
+.card-bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+}
+>>>>>>> d914b68 (updated some images)
 
 .description-wrapper {
 height: 8em;
@@ -691,7 +718,11 @@ height: 8em;
   flex: 1;
   min-height: 90px;
   padding: 10px;
+<<<<<<< HEAD
   box-shadow: inset 6px 6px 6px #abac9980, inset -3px -3px 6px 1px #d8e4ba;
+=======
+  box-shadow: inset 3px 3px 6px #ccdbe8, inset -3px -3px 6px 1px #ffffff80;
+>>>>>>> d914b68 (updated some images)
   position: relative
 }
 
@@ -777,8 +808,17 @@ height: 8em;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+<<<<<<< HEAD
   flex-direction: column;
   padding: 1.5em 0;
+=======
+}
+
+.long-desc-wrapper {
+  width: 85%;
+  padding-top: 10px;
+  min-height: 8em;
+>>>>>>> d914b68 (updated some images)
 }
 
 .card-address-1 {
@@ -977,4 +1017,8 @@ height: 8em;
   75% {
     transform: scale(1);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d914b68 (updated some images)
