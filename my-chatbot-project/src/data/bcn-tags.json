@@ -1,10 +1,6 @@
 [
     {
-        "name": "Historic",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Music",
+        "name": "Outdoor",
         "icon": "assets/icons/24h.svg"
     },
     {
@@ -12,63 +8,7 @@
         "icon": "assets/icons/24h.svg"
     },
     {
-        "name": "Food",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Indoor",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Market",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Tour",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Museum",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Sports",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Free",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Nightlife",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
         "name": "Art",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Amusement Park",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Outdoor",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Square",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Bar",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Religious",
-        "icon": "assets/icons/24h.svg"
-    },
-    {
-        "name": "Restaurant",
         "icon": "assets/icons/24h.svg"
     },
     {
@@ -76,11 +16,71 @@
         "icon": "assets/icons/24h.svg"
     },
     {
+        "name": "Amusement Park",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
         "name": "Scenic",
         "icon": "assets/icons/24h.svg"
     },
     {
+        "name": "Indoor",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Religious",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Museum",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Market",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Food",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Free",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Historic",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Sports",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Tour",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Bar",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Restaurant",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Nightlife",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Music",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
         "name": "Science",
+        "icon": "assets/icons/24h.svg"
+    },
+    {
+        "name": "Square",
         "icon": "assets/icons/24h.svg"
     }
 ]
